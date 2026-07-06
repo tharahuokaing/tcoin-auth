@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <title>T-Coin Registration Portal</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="tcoin.png" type="image/jpeg" />
-
+  <link rel="shortcut icon" href="tcoin.png" type="image/png" />
 </head>
 <body>
   <div class="container">
     <h2>T-Coin Sign Up</h2>
-    <form id="registrationForm">
+    <form id="registrationForm" novalidate>
       <input type="text" id="username" placeholder="Username" required>
       <input type="email" id="email" placeholder="Email" required>
       <input type="password" id="password" placeholder="Password" required>
@@ -18,7 +17,7 @@
       <div id="errorMessage" class="error"></div>
       <button type="submit">Register</button>
     </form>
-    <p style="text-align:center;margin-top:10px;">
+    <p class="switch-page">
       Already have an account? <a href="login.html">Login here</a>
     </p>
   </div>
